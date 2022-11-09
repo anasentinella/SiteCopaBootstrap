@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya&display=swap");
+
+.titulos,
+b {
+  font-size: 5em;
+  font-family: "DM Serif Display", serif;
+  color: #f4ece2;
+  padding-top: 2%;
+  text-align: center;
+  text-shadow: 5px 5px 5px #833131;
+}
+
+.subtitulos {
+  font-size: 2em;
+  font-family: "Alegreya", serif;
+  color: #4d1029;
+  text-align: center;
+  text-shadow: 5px 5px 5px #833131; 
+}
