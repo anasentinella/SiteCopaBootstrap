@@ -46,37 +46,34 @@
             text-shadow: 5px 5px 5px #833131;
         }
 
-        /*.card img {
-
-      width: 100%;
-      padding: 18px;
-    }*/
-
-        /*.card {
-      width: 300px;
-      height: 440px;
-    }*/
+        .myButton {
+      background-color: #4D1029;
+      border-color: #4D1029;
+        }
     </style>
 </head>
+
 <div class="body">
 
     <body>
-        <!--barra nav-->
+        <!--Início barra navegação-->
         <nav class="navbar navbar-expand-lg">
+
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">
+                            <a class="nav-link" aria-current="page" href="index.html">
                                 <i class="bi bi-house-door-fill" width="30" height="30"
-                                    class="d-inline-block align-text-top"></i>
+                                class="d-inline-block align-text-top"></i>
                                 Home
                             </a>
                         </li>
@@ -84,9 +81,9 @@
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                            aria-expanded="false">
                                 <i class="bi bi-collection-fill" width="30" height="30"
-                                    class="d-inline-block align-text-top"></i>
+                                class="d-inline-block align-text-top"></i>
                                 Grupos
                             </a>
 
@@ -112,7 +109,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="catar.html">
+                            <a class="nav-link" aria-current="page" href="catar.html">
                                 <i class="bi bi-flag-fill" width="30" height="30"
                                     class="d-inline-block align-text-top"></i>
                                 Qatar
@@ -120,7 +117,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="mascote.html">
+                            <a class="nav-link disabled" aria-current="page" href="mascote.html">
                                 <i class="bi bi-snapchat" width="30" height="30"
                                     class="d-inline-block align-text-top"></i>
                                 Mascote
@@ -128,7 +125,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="selecao.html">
+                            <a class="nav-link " aria-current="page" href="selecao.html">
                                 <i class="bi bi-clipboard2-fill" width="30" height="30"
                                     class="d-inline-block align-text-top"></i>
                                 Seleção
@@ -147,7 +144,6 @@
                 </div>
             </div>
         </nav>
-
         <!--Fim barra Navegação-->
 
         <!--Título-->
@@ -157,26 +153,32 @@
         </div>
         <!--Fim Título-->
 
-
+        <!--Início Container-->
         <div class="myContainer">
+
             <div class="MySubtitulos">Cadastro de Assinantes</div>
+            
+            <br>
+
             <form class="row g-3 needs-validation" novalidate>
                 <div class="col-md-4">
-                    <label for="validationCustom01" class="form-label">Nome</label>
-                    <input type="text" class="form-control" id="validationCustom01" value="nome" required>
-                    <div class="valid-feedback">
+                    <label for="validationCustom01" class="form-label">Nome:</label>
+                    <input type="text" class="form-control" id="validationCustom01" value="" required>
+                    <div class="invalid-feedback">
                         Por favor preencha o campo.
                     </div>
                 </div>
+
                 <div class="col-md-4">
-                    <label for="validationCustom02" class="form-label">Sobrenome</label>
-                    <input type="text" class="form-control" id="validationCustom02" value="Sobrenome" required>
-                    <div class="valid-feedback">
+                    <label for="validationCustom02" class="form-label">Sobrenome:</label>
+                    <input type="text" class="form-control" id="validationCustom02" value="" required>
+                    <div class="invalid-feedback">
                         Por favor preencha o campo.
                     </div>
                 </div>
+
                 <div class="col-md-4">
-                    <label for="validationCustomUsername" class="form-label">email</label>
+                    <label for="validationCustomUsername" class="form-label">Email:</label>
                     <div class="input-group has-validation">
                         <input type="text" class="form-control" id="validationCustomUsername"
                             aria-describedby="inputGroupPrepend" required>
@@ -185,23 +187,52 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-6">
-                    <label for="validationCustom03" class="form-label">Cidade</label>
+                    <label for="validationCustom03" class="form-label">Cidade:</label>
                     <input type="text" class="form-control" id="validationCustom03" required>
                     <div class="invalid-feedback">
                         Por favor preencha o campo.
                     </div>
                 </div>
+
                 <div class="col-md-3">
-                    <label for="validationCustom04" class="form-label">Estado</label>
+                    <label for="validationCustom04" class="form-label">Estado:</label>
                     <select class="form-select" id="validationCustom04" required>
-                        <option selected disabled value="">Escolha...</option>
-                        <option>...</option>
+                        <option value=""></option>
+                        <option value="RR">RR</option>
+                        <option value="AP">AP</option>
+                        <option value="AM">AM</option>
+                        <option value="PA">PA</option>
+                        <option value="AC">AC</option>
+                        <option value="RO">RO</option>
+                        <option value="TO">TO</option>
+                        <option value="MA">MA</option>
+                        <option value="PI">PI</option>
+                        <option value="CE">CE</option>
+                        <option value="RN">RN</option>
+                        <option value="PB">PB</option>
+                        <option value="PE">PE</option>
+                        <option value="AL">AL</option>
+                        <option value="SE">SE</option>
+                        <option value="BA">BA</option>
+                        <option value="MT">MT</option>
+                        <option value="DF">DF</option>
+                        <option value="GO">GO</option>
+                        <option value="MS">MS</option>
+                        <option value="MG">MG</option>
+                        <option value="ES">ES</option>
+                        <option value="RJ">RJ</option>
+                        <option value="SP">SP</option>
+                        <option value="PR">PR</option>
+                        <option value="SC">SC</option>
+                        <option value="RS">RS</option>
                     </select>
                     <div class="invalid-feedback">
                         Por favor preencha o campo.
                     </div>
                 </div>
+
                 <div class="col-md-3">
                     <label for="validationCustom05" class="form-label">Data de nascimento:</label>
                     <input type="text" class="form-control" id="validationCustom05" required>
@@ -209,6 +240,7 @@
                         Por favor preencha o campo.
                     </div>
                 </div>
+
                 <div class="col-12">
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
@@ -220,29 +252,36 @@
                         </div>
                     </div>
                 </div>
+
                 <hr>
+
                 <form>
                     <div class="form-group">
-                        <label for="formControlRange">DE 0-10 o quanto voçê acha que entende de futebol?</label>
+                        <label for="formControlRange">De 0-10 o quanto voçê acha que entende de futebol?</label>
                         <br>
                         <input type="range" class="form-control-range" id="formControlRange" size="100%">
                     </div>
-                </form><br>
+                </form>
+
+                <br>
+
                 <div class="col-12">
                     <form>
                         <div class="form-group">
                             <label for="formGroupExampleInput">Palpite 1° lugar: </label>
-                            <input type="text" class="form-control" id="formGroupExampleInput"
-                                placeholder="Example input">
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
                         </div>
+
                         <br>
+
                         <div class="form-group">
                             <label for="formGroupExampleInput2">Palpite 2° lugar:</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput2"
-                                placeholder="Another input">
+                            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
                         </div>
                     </form>
+
                     <br>
+
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
                             value="option2">
@@ -250,13 +289,15 @@
                             Quero receber notificações dos jogos!
                         </label>
                     </div>
+
                     <br>
-                    <button class="btn btn-primary" type="submit">Enviar</button>
+
+                    <button class="btn btn-danger myButton" type="submit">Enviar</button>
                 </div>
             </form>
-            
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-        
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+                crossorigin="anonymous"></script>
         </div>
 
     </body>
